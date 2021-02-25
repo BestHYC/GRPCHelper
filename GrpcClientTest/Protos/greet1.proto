@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService1";
+
+package Greeter1;
+
+import "Protos/greet.proto";
+
+// The greeting service definition.
+service Greeter1 {
+  // Sends a greeting
+  rpc SayHello (greet.HelloRequest) returns (greet.HelloReply);
+}
